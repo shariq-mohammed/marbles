@@ -49,6 +49,8 @@
 ##' }
 #' @export
 #' @import doParallel
+#' @importFrom stats density
+#' @importFrom utils tail
 #'
 #' @examples
 #' n = 3
@@ -59,7 +61,9 @@
 #' image_data = lapply(names(mri_data), function(im) mri_data[[im]][1:n])
 #' names(image_data) = names(mri_data)
 #'
-#' res = pca_on_images(image_data, n.regions = 3, nCores = 4)
+#' \dontrun{
+#' res = pca_on_images(image_data, n.regions = 3) # set nCores for parallel execution
+#' }
 
 pca_on_images = function(image_data, n.regions = 3, den.nx = 1000,
                          perc.var = 99, nCores = 1){

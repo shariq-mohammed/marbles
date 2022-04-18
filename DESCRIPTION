@@ -1,17 +1,18 @@
-Package: MBVSem
+Package: marbles
 Type: Package
-Title: EM-based Estimation For Sequential Bayesian Variable Selection
+Title: Multivariate Bayesian Layered Variable Selection
 Version: 0.1.0
-Author: Shariq Mohammed <shariqm@umich.edu>
-Maintainer: Shariq Mohammed <shariqm@umich.edu>
-Description: An EM-based estimation approach for Bayesian variable selection in
-    multivariate multiple regression. The package also performs sequential 
-    estimation for several multivariate multiple regressions by borrowing
-    information across models.
-License: GPL-3
+Author: Shariq Mohammed <shariqm@bu.edu>
+Maintainer: Shariq Mohammed <shariqm@bu.edu>
+Description: Bayesian layered variable selection in multivariate multiple 
+    regression using EM-algorithm--based estimation. The package also performs 
+    sequential estimation for several multivariate multiple regressions by 
+    borrowing information across models.
+License: GPL-3 + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+LazyDataCompression: gzip
+RoxygenNote: 7.1.2
 Imports: 
     stats,
     MASS,
