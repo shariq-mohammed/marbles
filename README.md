@@ -17,7 +17,7 @@ Installing the package
 ```
 # install the package (devtools package needed)
 if(!require(devtools)) install.packages("devtools")
-devtools::install_github('author/marbles')
+devtools::install_github('shariq-mohammed/marbles')
 ```
 
 Load the package
